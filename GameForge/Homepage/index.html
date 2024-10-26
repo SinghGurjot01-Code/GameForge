@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameForge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Assets/logo.png" alt="GameStore Logo" class="logo-img">
+                <a href="index.html" class="store-name">GameForge</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:3000/Homepage/index.html">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="http://127.0.0.1:3000/Homepage/about/about.html">About</a></li>
+                <li><a href="http://127.0.0.1:3000/sign in/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+        <video autoplay muted loop class="video-bg">
+            <source src="Assets/BG_minecraft_teaser.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Discover Amazing Games</h1>
+            <p>Explore a huge library of top-rated games. Start your adventure today!</p>
+            <a href="https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Games Section -->
+    <section class="featured-games">
+        <h2>Featured Games</h2>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxyWOjCuvzuaXi9HadPF0OxY3BhiONLbtwKQ&s" alt="Game 1">
+                <h3>PlayerUnknown's Battlegrounds</h3>
+                <p>Mobile game</p>
+                <p>Action | Shooting</p>
+                <a href="javascript:ShowGotSteamModal('steam://run/578080', 'PUBG: BATTLEGROUNDS', 'Play this game now')" class="buy-now">Play Now</a>
+                <div id="modal-pubg" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-close="modal-pubg">&times;</span>
+                        <h2>PlayerUnknown's Battlegrounds</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/ce/Vice-city-cover.jpg" alt="Game 2">
+                <h3>Grand Theft Auto: Vice City</h3>
+                <p>Mobile/PC Game</p>
+                <p>Violence | Story Based</p>
+                <a href="https://store.rockstargames.com/game/buy-gta-vice-city?_gl=1*h1y152*_ga*MTAzODcxMTY4MC4xNzI5Nzc5OTAy*_ga_PJQ2JYZDQC*MTcyOTc3OTkwMS4xLjAuMTcyOTc3OTkwMS4wLjAuMA.." class="buy-now">Buy Now</a>
+            </div>
+            <div class="game-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI5qKaMYEzUF7tE8Serpm3FJsCtPG83I-l2oL1wT-i23IZ9mKRVyIEsFvIJta9cDmC5-mScg" alt="Game 3">
+                <h3>Black Myth: Wukong</h3>
+                <p>PC/Mac</p>
+                <p>Violence | Story Based</p>
+                <a href="https://store.steampowered.com/app/2358720/Black_Myth_Wukong/" class="buy-now">Buy Now</a>
+            </div>
+            <div class="game-card">
+                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/30dd8syYR9JAPhV759qTQe/66e1f4978d8a6ff11201bc1c6dd7b7f9/acm-boxshot.jpg?imwidth=360" alt="Game 4">
+                <h3>Assassin's Creed: MIRAGE</h3>
+                <p>PC/Mac</p>
+                <p>Historical | Story Based</p>
+                <a href="#" class="buy-now">Coming Soon</a>
+            </div>
+            <!-- Add more game cards as needed -->
+        </div>
+    </section>
+
+    <!-- Game Categories Section -->
+    <section id="game-categories">
+        <h2>Game Categories</h2>
+        <div class="categories">
+            <div class="category">
+                <h3>Action</h3>
+                <p>Explore thrilling action-packed games that will keep you on the edge of your seat!</p>
+                <a href="#" class="category-link">View Games ></a>
+            </div>
+            <div class="category">
+                <h3>Adventure</h3>
+                <p>Embark on epic adventures in vast worlds filled with challenges and mysteries.</p>
+                <a href="#" class="category-link">View Games ></a>
+            </div>
+            <div class="category">
+                <h3>RPG</h3>
+                <p>Dive into rich storylines and character development in our role-playing games.</p>
+                <a href="#" class="category-link">View Games ></a>
+            </div>
+            <div class="category">
+                <h3>Strategy</h3>
+                <p>Test your tactical skills in games that require careful planning and execution for this game.</p>
+                <a href="#" class="category-link">View Games ></a>
+            </div>
+            <div class="category">
+                <h3>Simulation</h3>
+                <p>Experience real-world scenarios and environments in our simulation games.</p>
+                <a href="#" class="category-link">View Games ></a>
+            </div>
+            <!-- Add more categories as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GameStore. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
